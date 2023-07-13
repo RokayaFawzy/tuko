@@ -25,7 +25,7 @@ class Item extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 20),
                 child: Text(
                   number.jpName,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                   ),
@@ -35,7 +35,7 @@ class Item extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 20),
                 child: Text(
                   number.enName,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.white,
                     fontSize: 20,
                   ),
@@ -47,14 +47,9 @@ class Item extends StatelessWidget {
             flex: 1,
           ),
           IconButton(
-            onPressed: () {
-              // AssetSource player =
-              //     AssetSource('assets/sounds/colors/black.wav');
-              // AudioPlayer().play(player);
-              // AudioCache({})
-              AudioCache player = AudioCache(prefix: 'assets/sounds/numbers/');
-              // player.play
-              print('test1');
+            onPressed: () async {
+              final player = AudioPlayer();
+              await player.play(AssetSource('sounds/colors/black.wav'));
             },
             icon: const Icon(
               Icons.play_arrow,
