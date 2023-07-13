@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toku/models/number.dart';
-// import 'package:audioplayers/audioplayers.dart';
+import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
 
 class Item extends StatelessWidget {
   const Item({Key? key, required this.number}) : super(key: key);
@@ -46,11 +48,11 @@ class Item extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              AssetSource player =
-                  AssetSource('assets/sounds/colors/black.wav');
-              AudioPlayer().play(player);
+              // AssetSource player =
+              //     AssetSource('assets/sounds/colors/black.wav');
+              // AudioPlayer().play(player);
               // AudioCache({})
-              // AudioCache player = AudioCache(prefix: 'assets/sounds/numbers/');
+              AudioCache player = AudioCache(prefix: 'assets/sounds/numbers/');
               // player.play
               print('test1');
             },
