@@ -46,9 +46,9 @@ class Item extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              // AssetSource player =
-              //     AssetSource('assets/sounds/colors/black.wav');
-              // AudioPlayer().play(player);
+              AssetSource player =
+                  AssetSource('assets/sounds/colors/black.wav');
+              AudioPlayer().play(player);
               // AudioCache({})
               // AudioCache player = AudioCache(prefix: 'assets/sounds/numbers/');
               // player.play
