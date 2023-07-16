@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:toku/screens/colors_page.dart';
+import 'package:toku/screens/family_members_page.dart';
 import 'package:toku/screens/numbers_page.dart';
+import 'package:toku/screens/phrases_page.dart';
 
 import '../components/category_item.dart';
 
@@ -29,17 +32,29 @@ class HomePage extends StatelessWidget {
           Category(
             text: 'Family Members',
             color: Color.fromARGB(255, 29, 95, 34),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return FamilyMemberPage();
+              }));
+            },
           ),
           Category(
             text: 'Colors',
             color: Color.fromARGB(255, 70, 21, 123),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return ColorsPage();
+              }));
+            },
           ),
           Category(
             text: 'phrases',
             color: Color.fromARGB(255, 36, 152, 234),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return PhrasesPage();
+              }));
+            },
           ),
         ],
       ),

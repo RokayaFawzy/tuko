@@ -5,44 +5,54 @@ import '../components/item.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
-  final List<Number> number = const [
-    Number(
+  final List<Item> number = const [
+    Item(
+        sound: 'sounds/numbers/number_one_sound.mp3',
         image: 'assets/images/numbers/number_one.png',
         jpName: 'ichi',
         enName: '1'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_two_sound.mp3',
         image: 'assets/images/numbers/number_two.png',
         jpName: 'Ni',
         enName: '2'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_three_sound.mp3',
         image: 'assets/images/numbers/number_three.png',
         jpName: 'San',
         enName: '3'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_four_sound.mp3',
         image: 'assets/images/numbers/number_four.png',
         jpName: 'Shi',
         enName: '4'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_five_sound.mp3',
         image: 'assets/images/numbers/number_five.png',
         jpName: 'go',
         enName: '5'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_six_sound.mp3',
         image: 'assets/images/numbers/number_six.png',
         jpName: 'roku',
         enName: '6'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_seven_sound.mp3',
         image: 'assets/images/numbers/number_seven.png',
         jpName: 'nana',
         enName: '7'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_eight_sound.mp3',
         image: 'assets/images/numbers/number_eight.png',
         jpName: 'hachi',
         enName: '8'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_nine_sound.mp3',
         image: 'assets/images/numbers/number_nine.png',
         jpName: 'ku',
         enName: '9'),
-    Number(
+    Item(
+        sound: 'sounds/numbers/number_ten_sound.mp3',
         image: 'assets/images/numbers/number_ten.png',
         jpName: 'juu',
         enName: '10'),
@@ -65,10 +75,13 @@ class NumbersPage extends StatelessWidget {
     );
   }
 
-  List<Widget> getList(List<Number> number) {
-    List<Item> itemList = [];
+  List<Widget> getList(List<Item> number) {
+    List<ListItem> itemList = [];
     for (int i = 0; i < number.length; i++) {
-      itemList.add(Item(number: number[i]));
+      itemList.add(ListItem(
+        number: number[i],
+        color: Color(0xffEF9235),
+      ));
     }
     return itemList;
   }
