@@ -102,7 +102,7 @@ class PhraseItem extends StatelessWidget {
                   phrase.jpName,
                   style: const TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 15,
                   ),
                 ),
               ),

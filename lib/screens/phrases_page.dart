@@ -9,47 +9,47 @@ class PhrasesPage extends StatelessWidget {
 
   final List<Item> phrases = const [
     Item(
-      sound: 'sounds/phrases/dont_forget_to_subscribe.wav',
+      sound: 'sounds/phrases/dontforgettosubscribe.wav',
       jpName: 'KōdokuSuruKotoOWasurenaideKudasai',
       enName: 'DontForgetToSubscribe',
     ),
     Item(
-      sound: 'sounds/phrases/i_love_programming.wav',
+      sound: 'sounds/phrases/iloveprogramming.wav',
       jpName: 'WatashiWaPuroguraminguDaisukidesu',
       enName: 'ILoveProgramming',
     ),
     Item(
-      sound: 'sounds/phrases/programming_is_easy.wav',
+      sound: 'sounds/phrases/programmingiseasy.wav',
       jpName: 'PuroguraminguWaKantandesu ',
       enName: 'programmingIsEasy',
     ),
     Item(
-      sound: 'sounds/phrases/where_are_you_going.wav',
+      sound: 'sounds/phrases/whereareyougoing.wav',
       jpName: 'DokoNiIkuNo',
       enName: 'WhereAreYouGoing',
     ),
     Item(
-      sound: 'sounds/phrases/what_is_your_name.wav',
+      sound: 'sounds/phrases/whatisyourname.wav',
       jpName: 'NamaeWaNandesuKa',
       enName: 'what is your name ?',
     ),
     Item(
-      sound: 'sounds/phrases/i_love_anime.wav',
+      sound: 'sounds/phrases/iloveanime.wav',
       jpName: 'WatashiWaAnimeGaDaisukidesu',
       enName: 'i love anime',
     ),
     Item(
-      sound: 'sounds/phrases/how_are_you_feeling.wav',
+      sound: 'sounds/phrases/howareyoufeeling.wav',
       jpName: 'GoKibunWaIkagadesuKa',
       enName: 'HowAreYouFeeling?',
     ),
     Item(
-      sound: 'sounds/phrases/are_you_coming.wav',
+      sound: 'sounds/phrases/areyoucoming.wav',
       jpName: 'KimasuKa',
       enName: 'are you coming?',
     ),
     Item(
-      sound: 'sounds/phrases/yes_im_coming.wav',
+      sound: 'sounds/phrases/yesimcoming.wav',
       jpName: 'HaiWatashiWaKiteImasu',
       enName: 'yes i am coming',
     ),
